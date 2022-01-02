@@ -3,11 +3,11 @@ from enum import Enum
 
 class BaseConstants:
     """ Common application constants """
-    # DEFAULT_BASE_URL = "https://cbp-customer-qa.crossborderpickups.ca/"
-    DEFAULT_BASE_URL = "http://crossborderui.s3-website.us-east-2.amazonaws.com/#/login"
+    
+    DEFAULT_BASE_URL = "http://"
     CUSTOMER_USER_NAME = "qa_test12@yopmail.com"
     DEFAULT_PASSWORD = "123456"
-    OPERATION_PORTAL_URL = "https://cbp-ops-qa.crossborderpickups.ca/"
+    OPERATION_PORTAL_URL = "https://"
     OPERATION_PORTAL_USERNAME = "operation@cbp.com"
     OPERATION_PORTAL_PASSWORD = "operation"
     BUSINESS_USERNAME = "jr21029@gmail.com"
@@ -33,7 +33,7 @@ class BaseConstants:
 
     class Urls:
         """ Constants related to application page URL's """
-        GRID_HUB_URL = "http://ec2-3-16-166-56.us-east-2.compute.amazonaws.com:4444/wd/hub"
+        GRID_HUB_URL = "http://"
         LOGIN_PAGE_URL = "account/auth/login"
         PACKAGES_PAGE_URL = "packages"
         DASHBOARD_PAGE_URL = "customerDashboard"
@@ -213,24 +213,3 @@ class PageConstants:
             OPS_SHOP_AND_SHIP_OPTIONS = [NEW_PACKAGE, PACKAGES, ORDERS, CUSTOMS_FORMS, SCANNING_TOOL, REPORTS,
                                          OUTGOING_PALLET_REPORT, SCANNING_CHECK_MISSING_REPORT,
                                          SCANNING_CHECK_EXTRA_REPORT, EMPTY_SHELF_REPORT, PROCESSOR, SHELF_REPORT]
-
-        class Ecommerce:
-            """ Constants related to Ecommerce menu """
-            DASHBOARD = "Dashboard"
-            ORDERS = "Orders"
-            SHIPMENT_BATCHES = "Shipment Batches"
-
-        class EcommerceShipping:
-            """ Constants related to Ecommerce shipping menu """
-            SHIPMENTS = "Shipments"
-            BATCHES = "Batches"
-            RATES = "Rates"
-            ECOMMERCE_SHIPPING_OPTIONS = [SHIPMENTS, BATCHES, RATES]
-
-        class CustomerService:
-            """ Constants related to Customer Service menu """
-            CUSTOMER_ACCOUNT = "Customer Account"
-
-        class AdminPanel:
-            """ Constants related to Admin Panel menu """
-            USER_ACCOUNT_MANAGEMENT = "User Account Management"
