@@ -3,7 +3,8 @@ from enum import Enum
 
 class BaseConstants:
     """ Common application constants """
-    DEFAULT_BASE_URL = "https://cbp-customer-qa.crossborderpickups.ca/"
+    # DEFAULT_BASE_URL = "https://cbp-customer-qa.crossborderpickups.ca/"
+    DEFAULT_BASE_URL = "http://crossborderui.s3-website.us-east-2.amazonaws.com/#/login"
     CUSTOMER_USER_NAME = "qa_test12@yopmail.com"
     DEFAULT_PASSWORD = "123456"
     OPERATION_PORTAL_URL = "https://cbp-ops-qa.crossborderpickups.ca/"
