@@ -5,12 +5,12 @@ class BaseConstants:
     """ Common application constants """
     
     DEFAULT_BASE_URL = "http://"
-    CUSTOMER_USER_NAME = "qa_test12@yopmail.com"
+    CUSTOMER_USER_NAME = "XXX@yopmail.com"
     DEFAULT_PASSWORD = "123456"
     OPERATION_PORTAL_URL = "https://"
-    OPERATION_PORTAL_USERNAME = "operation@cbp.com"
+    OPERATION_PORTAL_USERNAME = "ops@XXX.com"
     OPERATION_PORTAL_PASSWORD = "operation"
-    BUSINESS_USERNAME = "jr21029@gmail.com"
+    BUSINESS_USERNAME = "XXX@gmail.com"
     DEFAULT_TIMEOUT = 30
     CHROME_BROWSER = "Chrome"
     CHROME_BINARY_LOCATION = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
