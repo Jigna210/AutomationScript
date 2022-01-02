@@ -26,7 +26,7 @@ class TestPackagesPage:
     Covers tests related to packages page
 
     Pre-requisite:
-        1. Enter url "https://www.crossborderpickups.ca/"
+        1. Enter url 
         2. Click on login button
         3. Enter username
         4. Enter password
