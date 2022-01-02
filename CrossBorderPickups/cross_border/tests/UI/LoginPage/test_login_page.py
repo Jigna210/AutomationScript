@@ -27,7 +27,7 @@ class TestLoginPage:
         assert page_title == "Shipments", "User can not be login successfully"
 
     @pytest.mark.parametrize('input_username, input_password', [
-        ('chavdajigna985@gmail.com', '123456'), ('test@cbp.com', '123456')])
+        ('xxx985@gmail.com', '123456'), ('test@cbp.com', '123456')])
     def test_user_can_login_with_credentials(self, input_username, input_password):
         """
         Test Steps:
@@ -71,7 +71,7 @@ class TestLoginPage:
 
     @pytest.mark.disable_logout
     @pytest.mark.parametrize('input_username, input_password', [
-        ('chavdajigna985@gmail.com', '12345'), ('test@cbp', '123456'), ('jr21029', '123456')])
+        ('XXX985@gmail.com', '12345'), ('test@cbp', '123456'), ('XX21029', '123456')])
     def test_login_invalid_credentials(self, input_username, input_password):
         """
         Test Steps:
@@ -95,7 +95,7 @@ class TestLoginPage:
                    NotificationMessages.LoginPageValidation.invalid_email_error
 
     @pytest.mark.parametrize('username, password', [
-        ("chavdajigna985@gmail.com", "123456"), ("jr21029@gmail.com", "123456")])
+        ("xxx985@gmail.com", "123456"), ("xx21029@gmail.com", "123456")])
     def test_user_can_login_successfully(self, username, password):
         """
         Test Steps:
@@ -113,6 +113,6 @@ class TestLoginPage:
 
         packages_page = PackagesPage(self.driver)
         page_title = packages_page.get_element_text(by_locator=Locators.PackagesPage.page_title)
-        expected_page_title = "Dashboard" if username == "jr21029@gmail.com" else "Shipments"
+        expected_page_title = "Dashboard" if username == "xx21029@gmail.com" else "Shipments"
 
         assert page_title == expected_page_title, "User can not be login successfully"
